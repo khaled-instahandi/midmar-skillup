@@ -1,0 +1,76 @@
+.eac-card {
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 49%;
+}
+
+.eac-value {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FFC800;
+    width: 100%;
+
+}
+
+.eac-label {
+    font-size: 16px;
+    color: #5A5A5A;
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
+.eac-chart-container {
+    width: 100px;
+    /* Adjust based on your size preference */
+    height: 100px;
+    position: relative;
+}
+
+.eac-legend {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.eac-legend-item {
+    display: flex;
+    align-items: center;
+}
+
+.eac-legend-color {
+    width: 16px;
+    height: 16px;
+    background-color: #FFC700;
+    margin-right: 5px;
+}
+
+.eac-legend-text {
+    font-size: 14px;
+}
+
+.eac-chart-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFC800;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.eac-card-butoom {
+      display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}

@@ -1,0 +1,84 @@
+.accept-th {
+    color: var(--Blue, #007AFF) !important;
+    font-family: "AG Book Pro";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.accept-td {
+    color: var(--Blue, #007AFF) !important;
+    font-family: "AG Book Pro";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.enrollment-url {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 600;
+    margin-bottom: 1rem;
+}
+
+.copy-link {
+    background-color: #fff3c7;
+    padding: 0.5rem;
+    color: var(--Dark-100, #313131);
+
+    /* 18/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.copy-link svg {
+    display: inline !important;
+}
+
+.enrollment-url h4 {
+    color: var(--Dark-100, #313131);
+    margin-right: 0.5rem;
+    font-family: "AG Book Pro";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.info-tag {
+    background-color: var(--White-bg, #F5F5F5);
+    border-radius: 0.5rem;
+    white-space: normal;
+    position: absolute;
+    padding: 1rem;
+    color: var(--Dark-80, #5A5A5A);
+    text-align: center;
+    font-family: AG Book Pro;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    z-index: 601;
+    line-height: normal;
+    right: 66%;
+    transform: translateX(50%);
+}
+
+.info-tag::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%) rotate(180deg);
+    border-width: 11px;
+    border-style: solid;
+    border-color: transparent transparent transparent #F5F5F5;
+    z-index: 99 !important;
+}

@@ -1,0 +1,11 @@
+.row-header-td > td {
+  background: var(--Dark-20, #d6d6d6);
+}
+.row-result-td > td {
+  background: rgba(
+    208,
+    232,
+    229,
+    0.8
+  ); /* Equivalent to var(--Primary-20, #d0e8e5) with opacity 0.8 */
+}

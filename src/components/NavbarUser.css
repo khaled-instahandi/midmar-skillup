@@ -1,0 +1,185 @@
+.navbar-user {
+    height: 61px;
+    position: relative;
+    width: 249px;
+  }
+  
+  .navbar-user .text-wrapper {
+    color: var(--color-dark-100);
+    font-family: var(--20-reg-eng-font-family);
+    font-size: var(--20-reg-eng-font-size);
+    font-style: var(--20-reg-eng-font-style);
+    font-weight: var(--20-reg-eng-font-weight);
+    left: 78px;
+    letter-spacing: var(--20-reg-eng-letter-spacing);
+    line-height: var(--20-reg-eng-line-height);
+    position: absolute;
+    top: 6px;
+  }
+  
+  .navbar-user .div {
+    color: var(--color-dark-80);
+    font-family: var(--16-reg-font-family);
+    font-size: var(--16-reg-font-size);
+    font-style: var(--16-reg-font-style);
+    font-weight: var(--16-reg-font-weight);
+    left: 78px;
+    letter-spacing: var(--16-reg-letter-spacing);
+    line-height: var(--16-reg-line-height);
+    position: absolute;
+    top: 32px;
+  }
+  
+  .navbar-user .arrow-right {
+    height: 24px;
+    left: 225px;
+    position: absolute;
+    top: 22px;
+    width: 24px;
+  }
+  
+  .navbar-user .ellipse {
+    height: 61px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 61px;
+  }
+  
+  .navbar-user .group {
+    height: 335px;
+    left: -13px;
+    position: absolute;
+    top: 96px;
+    width: 283px;
+  }
+  
+  .navbar-user .overlap-group {
+    background-color: var(--color-white);
+    border-radius: 4px;
+    box-shadow: var(--shaddow);
+    height: 335px;
+    position: relative;
+    width: 271px;
+  }
+  
+  .navbar-user .text-wrapper-2 {
+    color: var(--color-dark-60);
+    font-family: var(--16-reg-eng-font-family);
+    font-size: var(--16-reg-eng-font-size);
+    font-style: var(--16-reg-eng-font-style);
+    font-weight: var(--16-reg-eng-font-weight);
+    left: 24px;
+    letter-spacing: var(--16-reg-eng-letter-spacing);
+    line-height: var(--16-reg-eng-line-height);
+    position: absolute;
+    top: 24px;
+  }
+  
+  .navbar-user .text-wrapper-3 {
+    color: var(--color-dark-100);
+    font-family: var(--20-reg-eng-font-family);
+    font-size: var(--20-reg-eng-font-size);
+    font-style: var(--20-reg-eng-font-style);
+    font-weight: var(--20-reg-eng-font-weight);
+    left: 24px;
+    letter-spacing: var(--20-reg-eng-letter-spacing);
+    line-height: var(--20-reg-eng-line-height);
+    position: absolute;
+    top: 53px;
+  }
+  
+  .navbar-user .text-wrapper-4 {
+    color: var(--color-dark-100);
+    font-family: var(--20-reg-eng-font-family);
+    font-size: var(--20-reg-eng-font-size);
+    font-style: var(--20-reg-eng-font-style);
+    font-weight: var(--20-reg-eng-font-weight);
+    left: 60px;
+    letter-spacing: var(--20-reg-eng-letter-spacing);
+    line-height: var(--20-reg-eng-line-height);
+    position: absolute;
+    top: 151px;
+  }
+  
+  .navbar-user .vuesax-outline {
+    height: 24px;
+    left: 26px;
+    position: absolute;
+    top: 207px;
+    width: 24px;
+  }
+  
+  .navbar-user .text-wrapper-5 {
+    color: var(--color-dark-100);
+    font-family: var(--20-reg-eng-font-family);
+    font-size: var(--20-reg-eng-font-size);
+    font-style: var(--20-reg-eng-font-style);
+    font-weight: var(--20-reg-eng-font-weight);
+    left: 60px;
+    letter-spacing: var(--20-reg-eng-letter-spacing);
+    line-height: var(--20-reg-eng-line-height);
+    position: absolute;
+    top: 207px;
+  }
+  
+  .navbar-user .text-wrapper-6 {
+    color: var(--color-red);
+    font-family: var(--20-reg-eng-font-family);
+    font-size: var(--20-reg-eng-font-size);
+    font-style: var(--20-reg-eng-font-style);
+    font-weight: var(--20-reg-eng-font-weight);
+    left: 61px;
+    letter-spacing: var(--20-reg-eng-letter-spacing);
+    line-height: var(--20-reg-eng-line-height);
+    position: absolute;
+    top: 286px;
+  }
+  
+  .navbar-user .text-wrapper-7 {
+    color: var(--color-dark-80);
+    font-family: var(--16-reg-eng-font-family);
+    font-size: var(--16-reg-eng-font-size);
+    font-style: var(--16-reg-eng-font-style);
+    font-weight: var(--16-reg-eng-font-weight);
+    left: 24px;
+    letter-spacing: var(--16-reg-eng-letter-spacing);
+    line-height: var(--16-reg-eng-line-height);
+    position: absolute;
+    top: 80px;
+  }
+  
+  .navbar-user .line {
+    height: 1px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 120px;
+    width: 271px;
+  }
+  
+  .navbar-user .img {
+    height: 1px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 261px;
+    width: 271px;
+  }
+  
+  .navbar-user .vuesax-outline-user {
+    height: 24px;
+    left: 24px;
+    position: absolute;
+    top: 151px;
+    width: 24px;
+  }
+  
+  .navbar-user .vuesax-outline-2 {
+    height: 24px;
+    left: 25px;
+    position: absolute;
+    top: 287px;
+    width: 24px;
+  }
+  

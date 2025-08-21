@@ -1,0 +1,151 @@
+.stats-card {
+  background: var(--White, #fff);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.stats-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.stats-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.stats-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.stats-trend {
+  display: flex;
+  align-items: center;
+}
+
+.trend-value {
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.trend-value.positive {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.trend-value.negative {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.trend-value.neutral {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.stats-content {
+  flex: 1;
+}
+
+.stats-title {
+  font-size: 0.875rem;
+  color: var(--text-secondary, #6b7280);
+  margin: 0 0 0.5rem 0;
+  font-weight: 500;
+}
+
+.stats-value {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem 0;
+  line-height: 1.2;
+}
+
+.stats-subtitle {
+  font-size: 0.75rem;
+  color: var(--text-tertiary, #9ca3af);
+  margin: 0;
+  font-weight: 400;
+}
+
+/* التجاوب مع الشاشات المختلفة */
+@media (max-width: 1024px) {
+  .stats-card {
+    padding: 1.25rem;
+    min-height: 120px;
+  }
+  
+  .stats-value {
+    font-size: 1.75rem;
+  }
+  
+  .stats-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-card {
+    padding: 1rem;
+    min-height: 100px;
+  }
+  
+  .stats-value {
+    font-size: 1.5rem;
+  }
+  
+  .stats-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 1.125rem;
+  }
+  
+  .stats-title {
+    font-size: 0.8rem;
+  }
+  
+  .stats-subtitle {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-card {
+    padding: 0.875rem;
+    min-height: 90px;
+  }
+  
+  .stats-card-header {
+    margin-bottom: 0.75rem;
+  }
+  
+  .stats-value {
+    font-size: 1.375rem;
+  }
+  
+  .stats-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+}

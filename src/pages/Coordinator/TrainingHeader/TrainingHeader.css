@@ -1,0 +1,73 @@
+.training-nam {
+  color: var(--Dark-80, #5a5a5a);
+
+  /* 16/reg Eng */
+  font-family: "AG Book Pro";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.project-header-right-t {
+  display: flex;
+  margin-left: 1rem;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.project-header h1 {
+  white-space: nowrap;
+}
+
+.project-header-home {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.project-header-right {
+  display: flex;
+  margin-left: 1rem;
+  width: 40%;
+  justify-content: space-evenly;
+}
+
+.button-snr {
+  border-radius: 0.25rem;
+  background: var(--Primary-100, #158b7f);
+  color: var(--White, #fff);
+
+  /* 20/reg Eng */
+  font-family: "AG Book Pro";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (max-width: 768px) {
+  .project-header-home {
+    flex-direction: column;
+    align-items: self-start;
+  }
+  .col-6-time {
+    width: unset !important;
+  }
+  .project-header-right {
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .project-header h1 {
+    white-space: wrap;
+  }
+
+  .button-snr {
+    margin: 0.5rem 0rem;
+  }
+}

@@ -1,0 +1,52 @@
+.progress-bar-g-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.progress-top {
+  display: flex;
+  margin: 0.5rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-bar-g-label {
+
+  color: var(--Dark-80, #5A5A5A);
+
+  /* 20/reg Eng */
+  font-family: AG Book Pro;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.progress-bar-g-wrapper {
+  flex-grow: 1;
+  height: 20px;
+  background-color: #D6D6D6;
+  border-radius: 10px;
+  margin: 0.5rem 1rem;
+  overflow: hidden;
+}
+
+.progress-bar-g-a {
+  height: 100%;
+  background-color: #007AFF;
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out;
+}
+
+.progress-bar-g-percentage {
+  color: var(--Dark-80, #5A5A5A);
+
+  /* 20/reg Eng */
+  font-family: AG Book Pro;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

@@ -1,0 +1,153 @@
+.user-profile-container {
+  font-family: Arial, sans-serif;
+  position: relative;
+  width: 250px;
+  /* Adjust as needed */
+}
+
+.user-profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.user-profile-picture {
+  width: 40px;
+  /* Adjust as needed */
+  height: 40px;
+  /* Adjust as needed */
+  border-radius: 50%;
+}
+
+.user-profile-info {
+  flex-grow: 1;
+  margin-left: 0.5rem;
+}
+
+.user-profile-name {
+  display: block;
+  color: var(--Dark-100, #313131);
+
+  /* 20/reg Eng */
+  font-family: AG Book Pro;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.user-profile-role {
+  display: block;
+  color: var(--Dark-80, #5A5A5A);
+
+  /* 16/reg */
+  font-family: SwissraCondensed-Normal;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+
+
+.user-profile-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  z-index: 10;
+}
+
+.user-profile-account-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  justify-content: space-around;
+  height: 6rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.user-profile-account-info span {
+  color: var(--Dark-60, #838383);
+
+  /* 16/reg Eng */
+  font-family: AG Book Pro;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.user-profile-account-info strong {
+  color: var(--Dark-100, #313131);
+
+  /* 20/reg Eng */
+  font-family: AG Book Pro;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.user-profile-account-info p {
+  color: var(--Dark-80, #5A5A5A);
+
+  /* 16/reg Eng */
+  font-family: AG Book Pro;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.user-profile-menu .menu-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  color: var(--Dark-100, #313131);
+  text-decoration: none;
+  /* 20/reg Eng */
+  font-family: AG Book Pro;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.user-profile-menu .menu-item.logout {
+  color: var(--Red, #EA5148);
+
+  /* 20/reg Eng */
+  font-family: AG Book Pro;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+}
+
+.user-profile-menu .menu-item img {
+  margin-right: 0.5rem;
+}
+
+:dir(rtl) .user-profile-info {
+  flex-grow: 1;
+  margin-right: 0.5rem;
+}
+
+:dir(rtl) .menu-link>.icon {
+  margin-right: 0;
+  margin-left: 1rem;
+}

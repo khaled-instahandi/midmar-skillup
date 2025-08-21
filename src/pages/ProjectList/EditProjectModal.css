@@ -1,0 +1,66 @@
+.header-text-edit-project {
+    color: var(--Dark-80, #5A5A5A);
+    /* width: 100vh; */
+    text-align: center;
+    /* 32/bold Eng */
+    font-family: AG Book Pro;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.close-button-alert {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.button-edit-project {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: var(--White, #FFF);
+    height: 3rem;
+    /* 24/bold Eng */
+    font-family: AG Book Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    background: linear-gradient(179deg, #158B7F 1.05%, #00BAAE 303.16%);
+    line-height: normal;
+}
+
+.edit-project-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    align-items: center;
+    justify-items: stretch;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 1rem;
+
+}
+
+.edit-project-form button {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+}
+
+.edit-project-form .name-edit-project {
+    grid-column: 1 / -1;
+    align-items: center;
+}
+
+.edit-project-form .link-edit-project {
+    grid-column: 1 / -1;
+    align-items: center;
+}

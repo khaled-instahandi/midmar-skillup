@@ -1,0 +1,57 @@
+.panel-page {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+}
+
+.panel-charts-top {
+    display: flex;
+}
+
+.profile-image-edit {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edit-btn-panel {
+    color: var(--White, #FFF);
+
+    /* 20/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    padding: 1rem;
+    line-height: normal;
+    border-radius: 0.25rem;
+    background: var(--Primary-100, #158B7F);
+}
+
+@media (max-width: 768px) {
+    .panel-charts-top {
+        flex-direction: column;
+
+    }
+
+    .profile-image-edit {
+        padding: 1rem 0;
+    }
+
+    .edit-btn-panel {
+        margin-top: 1rem;
+    }
+
+    .profile-image-edit {
+        white-space: nowrap;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+}

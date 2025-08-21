@@ -1,0 +1,175 @@
+.card-one {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 25rem;
+  height: 22.5rem;
+  padding: 15px;
+
+  /* margin: 20px; */
+}
+
+.on-image-card {
+  background: rgba(208, 232, 229, 0.9);
+  /* Adjust the opacity and the RGB values as needed */
+  border-radius: 0.25rem;
+  padding: 5px;
+  color: var(--Primary-100, #158B7F);
+
+  /* 14/bold */
+  font-family: SwissraCondensed-Medium;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card-header {
+  position: relative;
+  /* padding: 10px; */
+  margin-bottom: 10px;
+
+}
+
+.card-image {
+  width: 100%;
+  height: 12.5rem;
+  display: block;
+  border-radius: 0.5rem;
+
+}
+
+.heart-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.heart-icon.is-favorite {
+  color: red;
+  /* Change as needed */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+.card-title {
+  color: var(--Dark-100, #313131);
+
+  /* 20/bold */
+  font-family: SwissraCondensed-Medium;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0.5em;
+}
+
+.icon-t {
+  margin-left: 5px
+}
+
+.card-info {
+  width: 100%;
+  display: flex;
+  /* margin-bottom: 1em; */
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.card-info-item {
+  display: flex;
+  color: var(--Dark-60, #838383);
+
+  /* 14/reg */
+  font-family: SwissraCondensed-Normal;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.join-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.join-button:hover {
+  background-color: #3e8e41;
+}
+
+/* Add your existing styles here */
+
+.lecturer-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  width: 100%;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  color: var(--Dark-80, #5A5A5A);
+
+  /* 18/reg */
+  font-family: SwissraCondensed-Normal;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* ... existing styles ... */
+
+.icon-wrapper {
+  background-color: #158B7F;
+  border-radius: 50%;
+  /* padding: 4px; */
+  display: inline-block;
+  margin-left: 8px;
+  /* Adjust spacing as needed */
+
+}
+
+
+
+/* ... rest of the styles ... */
+
+
+.divider {
+  align-items: center;
+  text-align: center;
+  border: 0;
+  margin: 1rem 0rem;
+  height: 1px;
+  background: #e0e0e0;
+  /* Use the color that matches the design */
+  width: 100%;
+  /* Adjust spacing as needed */
+}
+
+.action-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Update styles for .join-button if necessary to match your design */

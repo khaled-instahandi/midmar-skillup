@@ -1,0 +1,133 @@
+.notification-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.notification-icon {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-dot {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 10px;
+  height: 10px;
+}
+
+.notification-dropdown {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 22px;
+  width: 300px;
+  z-index: 99;
+}
+
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.notification-header button,
+.notification-header span {
+  color: var(--Primary-100, #158b7f);
+  font-family: AG Book Pro;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.notification-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.notification-content {
+  margin-left: 10px;
+}
+
+.notification-content span {
+  color: var(--Dark-60, #838383);
+  font-family: AG Book Pro;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.notification-content p {
+  color: var(--Dark-80, #5a5a5a);
+  font-family: AG Book Pro;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.notification-content hr {
+  color: var(--Dark-100, #313131);
+  font-family: AG Book Pro;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.profile-icon {
+  padding: 4px;
+  border-radius: 50%;
+  width: 2.5625rem;
+  height: 2.5625rem;
+  flex-shrink: 0;
+  background-color: var(--Primary-20, #d0e8e5);
+}
+
+.notification-footer {
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 768px) {
+  .notification-dropdown {
+    width: 16rem;
+    border-radius: 0;
+    top: 50px;
+    right: -140px;
+    /* Adjust as needed */
+  }
+
+  .notification-header {
+    padding: 8px;
+  }
+
+  .notification-content p {
+    font-size: 0.9rem;
+  }
+
+  .notification-content span {
+    font-size: 0.9rem;
+  }
+}

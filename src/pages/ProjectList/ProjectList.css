@@ -1,0 +1,153 @@
+.projects-list {
+    border-radius: 0.75rem;
+    background: var(--White, #FFF);
+
+    /* shaddow */
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+    margin: 2rem;
+}
+
+
+.projects {
+    border-radius: 0.375rem;
+    border: 1px solid var(--Dark-20, #D6D6D6);
+    background: var(--White, #FFF);
+
+    /* shaddow */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.projects-details h2 {
+    color: var(--Dark-100, #313131);
+
+    /* 28/reg Eng */
+    font-family: AG Book Pro;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+.projects-actions button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.projects-actions img {
+    width: 3rem;
+    margin: 0.5rem;
+    /* Adjust based on your icon size */
+}
+
+.button-add-project {
+    height: 3rem;
+    flex-shrink: 0;
+    border-radius: 0.25rem;
+    background: var(--Primary-100, #158B7F);
+    color: var(--White, #FFF);
+
+    /* 20/reg Eng */
+    font-family: AG Book Pro;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header-projects {
+    display: flex;
+    margin: 1rem 0rem;
+    justify-content: space-between;
+}
+
+.header-projects h1 {
+    color: var(--Dark-100, #313131);
+
+    /* 28/reg Eng */
+    font-family: AG Book Pro;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.projects-details img {
+    display: inline;
+}
+
+.projects-details {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 0.5rem;
+    flex-direction: column;
+}
+
+.activiteAndBuget {
+    display: flex;
+
+}
+
+.projects-name-span {
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 16/reg Eng */
+    margin-bottom: 0.5rem;
+    font-family: AG Book Pro;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bg-color-active {
+    background: rgba(245, 245, 245, 0.5);
+    margin: 1rem 2rem;
+    padding: 1rem;
+}
+
+.bg-color-active p {
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 16/reg Eng */
+    font-family: AG Book Pro;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bg-color-active p span {
+    color: var(--Dark-100, #313131);
+    background: rgba(255, 200, 0, 0.2);
+    /* 16/reg Eng */
+    font-family: AG Book Pro;
+    font-size: 1rem;
+    font-style: normal;
+    padding: 6px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media screen and (max-width: 768px) {
+    .projects-details h2 {
+        font-size: 1.25rem;
+    }
+
+    .projects,
+    .header-projects {
+        display: flex;
+        flex-direction: column;
+    }
+    .button-add-project{
+        margin: 1rem 0rem;
+    }
+}

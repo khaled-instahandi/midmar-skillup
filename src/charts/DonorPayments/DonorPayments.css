@@ -1,0 +1,77 @@
+.payments-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+}
+
+.payment-label {
+  font-size: 14px;
+  color: #333;
+  margin-right: 10px;
+}
+
+.payment-value {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.payment-color-box {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.chart-and-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.chart-container,
+.info-container {
+
+  width: 50%;
+}
+
+.donor-payments-container {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: var(--White, #FFF);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 10px; */
+}
+
+.donor-payments-container h2 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+  .chart-and-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .chart-container,
+  .info-container {
+    width: 100%;
+
+  }
+
+  .donor-payments-container {
+    width: 100%;
+  }
+}

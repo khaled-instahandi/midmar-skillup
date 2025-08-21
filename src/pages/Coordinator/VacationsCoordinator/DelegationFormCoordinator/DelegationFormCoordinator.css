@@ -1,0 +1,114 @@
+.delegation-form {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.delegation-form h2 {
+    color: var(--Dark-100, #313131, 0.8);
+    border-radius: 0.25rem 0.25rem 0rem 0rem;
+    background: var(--Primary-40, #A1D1CC);
+    /* 28/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* Or any color you prefer */
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.dropdown-delegated-employee > .dropdown {
+    border: none !important;
+}
+
+
+
+.delegation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout: fixed;
+}
+
+.delegation-table th {
+    color: var(--Dark-100, #313131);
+
+    /* 24/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #D0E8E5;
+    /* Or any color you prefer */
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #D0E8E5;
+}
+
+.buttom-table {
+    background-color: #D0E8E5 !important;
+}
+
+.buttom-table td {
+    text-align: center;
+    color: var(--Dark-100, #313131);
+
+    /* 24/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.delegation-table td {
+    padding: 10px;
+    border: 1px solid #A1D1CC;
+}
+
+.delegation-table input[type="text"] {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+
+    padding: 8px;
+    border-radius: 4px;
+    border: none !important;
+}
+
+.delegation-table input[type="text"]:focus {
+    outline: none;
+}
+
+.signature-clearance {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signature-clearance input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    font-size: 1.5rem;
+
+    margin: 5px;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    /* border: 1px solid #ccc; */
+}
+
+.buttom-table {
+    align-items: center;
+    background-color: #D0E8E5 !important;
+}
+
+/* If you need additional responsiveness */
+@media (max-width: 768px) {
+    .signature-clearance {
+        flex-direction: column;
+    }
+}

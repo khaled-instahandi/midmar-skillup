@@ -1,0 +1,41 @@
+.user-complaint-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.user-complaint-container h3 {
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 20/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.user-complaint-container p {
+    color: var(--Dark-100, #313131);
+
+    /* 20/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 2rem;
+    line-height: normal;
+}
+
+.user-complaint-container img {
+    display: inline-block;
+    margin-right: .5rem;
+}
+
+.complaint-reply-section,
+.complaint-text-section {
+    margin-top: 2rem;
+}

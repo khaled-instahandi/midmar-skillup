@@ -1,0 +1,28 @@
+.educational-level-chart-container {
+    flex: 1;
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    background: var(--White, #FFF);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.educational-level-chart-container h2 {
+    text-align: center;
+    color: #5A5A5A;
+    font-family: "Arial", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.chart-container-s {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}

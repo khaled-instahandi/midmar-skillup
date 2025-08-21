@@ -1,0 +1,95 @@
+.budget-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  white-space: nowrap;
+}
+
+.budget-table-pur {
+  grid-column: 1 / -1;
+
+}
+
+.budget-table-pur h2 {
+  color: var(--Dark-80, #5A5A5A);
+
+  /* 28/bold Eng */
+  font-family: "AG Book Pro";
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+.budget-table td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  color: var(--Dark-80, #5A5A5A);
+
+  /* 20/reg Eng */
+  font-family: "AG Book Pro";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.budget-table thead {
+  border-radius: 0.25rem;
+  background: var(--White-bg, #F5F5F5);
+  color: var(--Dark-80, #5A5A5A);
+
+}
+
+.budget-table th {
+  padding: 8px;
+
+  /* 20/reg Eng */
+  font-family: "AG Book Pro";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.total-cost {
+  margin-top: 1rem;
+  color: var(--Dark-80, #5A5A5A);
+
+  /* 24/reg Eng */
+  font-family: "AG Book Pro";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  border-radius: 0.25rem;
+  background: var(--White-bg, #F5F5F5);
+  line-height: normal;
+  padding: .5rem;
+  width: 20%;
+}
+
+.total-cost span {
+  color: var(--Primary-100, #158B7F);
+
+  /* 24/bold Eng */
+  font-family: "AG Book Pro";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.buttom-budget-table {
+  display: flex;
+  justify-content: space-between;
+}
+
+.budget-table input {
+  min-width: 20% !important;
+}
+.buttom-budget-table-details {
+  display: flex;
+  justify-content: flex-end;
+}

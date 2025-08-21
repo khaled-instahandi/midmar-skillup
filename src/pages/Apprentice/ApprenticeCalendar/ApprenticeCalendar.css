@@ -1,0 +1,55 @@
+.custom-row-height {
+  height: 100px; /* Adjust the height as needed */
+}
+.fc-timegrid-slots tr,
+.fc-col-header tr {
+  height: 3.5rem; /* Adjust the height as needed */
+}
+.fc-timegrid-event-harness > .fc-timegrid-event {
+  inset: 6px !important;
+  text-align: center !important;
+  direction: rtl !important;
+  position: absolute !important;
+  background: rgba(0, 122, 255, 0.06) !important;
+
+  border: none !important;
+}
+.fc-timegrid-event .fc-event-time {
+  display: none !important;
+}
+.fc-scrollgrid-sync-inner {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+.fc-v-event .fc-event-title-container {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  color: var(--Blue, #007aff) !important;
+  font-size: 1rem;
+}
+.css-1rtg91x-MuiDateCalendar-root {
+  direction: ltr;
+  border-radius: 0.25rem;
+  background: var(--White, #fff);
+
+  /* shaddow */
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.css-1wy8uaa-MuiButtonBase-root-MuiPickersDay-root.Mui-selected,
+.css-23p0if-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+  color: #fff;
+  background-color: #158b7f !important;
+  font-weight: 500;
+}
+.css-innj4t-MuiPickersYear-yearButton.Mui-selected {
+  color: #fff;
+  background-color: #158b7f !important;
+}
+
+.fc .fc-timegrid-col.fc-day-today {
+  background-color: unset !important;
+}

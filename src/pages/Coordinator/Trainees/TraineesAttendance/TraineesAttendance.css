@@ -1,0 +1,27 @@
+.yes-date img,
+.no-date img {
+    display: inline;
+    margin-left: 0.5rem;
+}
+
+.yes-date {
+    color: var(--Primary-100, #158B7F);
+
+    /* 18/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.no-date {
+    color: var(--Red, #EA5148);
+
+    /* 18/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

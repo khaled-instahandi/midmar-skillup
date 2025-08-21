@@ -1,0 +1,32 @@
+.circle-progress-container {
+   transform: translate(50%);
+   width: 1rem;
+   /* display: inline-block; */
+   height: 1rem;
+   /* background-color: #f0f0f0; */
+   border-radius: 50%;
+   position: relative;
+   display: inline-block;
+   margin-right: 1.5rem;
+}
+
+.circle-progress-bar {
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   position: absolute;
+   clip-path: polygon(0% 0%, 100% 0%, 100% 100%,0% 100%);
+   transition: clip-path 0.5s; /* تضيف تأثير التدرج */
+}
+.circle-progress-bar-m{ 
+   width: 60%;
+   height: 70%;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   border-radius: 50%;
+   position: absolute;
+   background-color: #fff;
+}
+
+

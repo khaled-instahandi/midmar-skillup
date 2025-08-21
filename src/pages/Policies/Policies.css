@@ -1,0 +1,87 @@
+.policies-container {
+  /* Adjust as needed */
+  margin: 2rem;
+  padding: 2rem;
+
+  border-radius: 0.25rem;
+  background: var(--White, #fff);
+
+  /* shaddow */
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.policies-container-v {
+  border-radius: 1rem;
+  border: 2px solid var(--Dark-60, #838383);
+  padding: 1rem;
+}
+.policy-section h2 svg {
+  display: inline;
+}
+.policies-container-s {
+  margin: 0rem 1rem;
+  padding: 2rem;
+
+  /* Or any font of your choice */
+  border-radius: 0.25rem;
+  background: var(--White, #fff);
+}
+
+.policies-container-s h1 {
+  color: var(--Dark-100, #313131);
+  text-align: right;
+
+  /* 40/bold */
+  font-family: SwissraCondensed-Medium;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+:dir(rtl) .policies-container {
+  /* box-shadow: unset; */
+  margin: 0;
+}
+
+.policies-container h1 {
+  color: var(--Dark-100, #313131);
+
+  /* 32/bold Eng */
+  font-family: "AG Book Pro";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+.policy-section {
+  margin-bottom: 1.5rem;
+}
+
+.policy-section h2 {
+  color: var(--Dark-100, #313131);
+
+  /* 28/reg Eng */
+  font-family: "AG Book Pro";
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0.5rem;
+}
+
+.policy-section p {
+  color: var(--Dark-80, #5a5a5a);
+  font-family: "AG Book Pro";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 188%;
+  /* 2.35rem */
+  text-align: justify;
+  /* For justified paragraph alignment */
+}
+
+/* Add any additional styles as needed */

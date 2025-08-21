@@ -1,0 +1,129 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125vh;
+  background-color: #ecf0f3;
+  /* Or any background color you prefer */
+  position: relative;
+  overflow: hidden;
+}
+
+.login-card {
+  border-radius: 1.5rem;
+  background: var(--White, #fff);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  padding: 2rem;
+  flex-shrink: 0;
+  width: 90%;
+  /* Default to a full width on small screens */
+  max-width: 500px;
+  /* Maximum width of the card */
+  text-align: center;
+  z-index: 10;
+}
+
+.logo {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logo img {
+  width: 8.875rem;
+  height: 5.1875rem;
+  flex-shrink: 0;
+}
+
+.login-card h2 {
+  color: var(--Dark-100, #313131);
+  margin-top: 1.25rem;
+  margin-bottom: 1.5rem;
+  /* 40/bold Eng */
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-utilities {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.form-utilities label {
+  cursor: pointer;
+}
+
+.form-utilities a {
+  text-decoration: none;
+  color: var(--Primary-100, #158b7f);
+
+  /* 16/reg Eng */
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sign-in-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #009688;
+  color: white;
+  cursor: pointer;
+}
+
+.sign-in-button:hover {
+  background-color: #00796b;
+}
+
+.sharp-background {
+  position: absolute;
+  bottom: -400px;
+  right: -200px;
+  border-radius: 43.5625rem;
+  border: 100px solid var(--Primary-60, #73b9b2);
+  width: 43.5625rem;
+  height: 43.5625rem;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .login-card {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sharp-background {
+    bottom: -50%;
+    right: -50%;
+  }
+  .form-utilities {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 4rem;
+    justify-content: space-around;
+  }
+}

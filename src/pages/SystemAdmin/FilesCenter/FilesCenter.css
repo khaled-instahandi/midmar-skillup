@@ -1,0 +1,45 @@
+/* Existing styles remain the same */
+
+.url-cell {
+  padding: 0.5rem !important;
+}
+
+.url-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.url-link {
+  color: #158b7f;
+  text-decoration: none;
+  font-size: 14px;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.url-link:hover {
+  text-decoration: underline;
+}
+
+.copy-button {
+  border-radius: 51px;
+  background: var(--Primary-20, #d0e8e5);
+  padding: 5px 24px;
+  color: var(--Primary-100, #158b7f);
+
+  /* 18/reg Eng */
+  font-family: "AG Book Pro";
+  font-size: 18px;
+  display: flex;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.copy-button:hover {
+  background: #e9ecef !important;
+}

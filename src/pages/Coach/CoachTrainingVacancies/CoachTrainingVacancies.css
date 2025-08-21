@@ -1,0 +1,67 @@
+.bottom-text-template {
+  display: flex;
+}
+.bottom-text-template img {
+  display: inline;
+  margin-left: 0.5rem;
+}
+.bottom-text-template > p {
+  color: var(--Dark-80, #5a5a5a);
+  text-align: right;
+
+  /* 16/reg */
+  font-family: SwissraCondensed-Normal;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bottom-text-template > p > span {
+  color: var(--Primary-100, #158b7f);
+  text-align: right;
+  margin-right: 0.5rem;
+  /* 16/bold Eng */
+  font-family: "AG Book Pro" !important;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.card-template-details {
+  width: 100%;
+  border-radius: 0.25rem;
+  background: var(--White, #fff);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 2rem 1rem;
+}
+.card-template-details > img {
+  width: -webkit-fill-available;
+  border-radius: 0.25rem;
+  border: 1px solid var(--Dark-20, #d6d6d6);
+}
+.w-4-5 {
+  height: 4.5rem !important;
+}
+.cancel-date {
+  color: var(--Blue, #007aff);
+  text-align: right;
+
+  /* 18/bold */
+  font-family: SwissraCondensed-Medium;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.close-date {
+  color: var(--Yellow, #ffc800);
+  text-align: right;
+
+  /* 18/bold */
+  font-family: SwissraCondensed-Medium;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

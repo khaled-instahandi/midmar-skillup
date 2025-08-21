@@ -1,0 +1,107 @@
+.gender-chart-container {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: var(--White, #FFF);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.gender-chart-container h1 {
+  margin: 1rem 0rem;
+  text-align: center;
+  color: var(--Dark-80, #5A5A5A);
+
+  /* 24/reg Eng */
+  font-family: "AG Book Pro";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.chart-container-gender {
+
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chart-gender {
+  flex-basis: 50%;
+}
+
+
+.chart-legend-gender {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-top: 15px; */
+  /* width: 50%; */
+  flex-basis: 35%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.legend-item-g {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 20px;
+  color: var(--Dark-100, #313131);
+
+  /* 18/reg Eng */
+  font-family: "AG Book Pro";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.legend-item-g span {
+  margin-top: 0.5rem;
+  /* 24/bold Eng */
+  font-family: "AG Book Pro";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.legend-color-box-g {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.male {
+  background-color: #FFA726;
+}
+
+.female {
+  background-color: #26A69A;
+}
+
+.total {
+  background: var(--Dark-60, #838383);
+}
+
+@media (max-width: 768px) {
+  .chart-container-gender {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chart-legend-gender {
+    /* align-items: center; */
+    margin-left: 0;
+    width: 100%;
+  }
+
+  /* .legend-item-g {
+    align-items: center;
+  } */
+}

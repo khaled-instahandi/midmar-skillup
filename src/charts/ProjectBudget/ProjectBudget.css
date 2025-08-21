@@ -1,0 +1,89 @@
+.project-budget-card {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: var(--White, #FFF);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 10px; */
+}
+
+.card-header {}
+
+.card-header-chart-project h2 {
+  margin: 0;
+  display: flex;
+  font-size: 18px;
+  color: #333;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card-body-chart-project {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chart-container-project {
+  width: 50%;
+  position: relative;
+}
+
+.budget-info {
+  width: 40%;
+  padding-left: 16px;
+}
+
+.budget-item {
+  margin-bottom: 8px;
+}
+
+.budget-label {
+  font-size: 14px;
+  color: #333;
+  flex: 1;
+}
+
+
+.budget-value {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+
+}
+
+.chart-container {
+  position: relative;
+  margin: auto;
+}
+
+.chart-percentage {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--White-bg, #F5F5F5);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+}
+
+.budget-color-box {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .project-budget-card {
+    width: 100%;
+  }
+}

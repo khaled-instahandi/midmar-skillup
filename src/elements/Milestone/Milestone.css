@@ -1,0 +1,55 @@
+.milestone {
+    position: relative;
+    background: rgba(0, 122, 255, 0.08);
+    border-radius: 0.5rem;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.)1;
+    margin: 40px auto;
+}
+
+.status-indicator-m {
+    position: absolute;
+}
+
+.top-indicator {
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+    top: -40px;
+    /* Adjust as needed based on your SVG's size */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centers the indicator */
+}
+
+.bottom-indicator {
+    bottom: -40px;
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.title {
+    color: var(--Blue, #007AFF);
+
+    /* 16/reg Eng */
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 12/reg Eng */
+    font-family: AG Book Pro;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

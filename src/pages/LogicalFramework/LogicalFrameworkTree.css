@@ -1,0 +1,303 @@
+.tree-frame-work {
+    background: #fff;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    border-radius: 8px;
+    min-height: calc(100vh - 4rem);
+}
+
+.text-overall2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.tree-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+}
+
+/* Vertical lines for connections */
+
+/* Individual item connection lines */
+.outcome-item::before,
+.output-item::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -2rem;
+    height: 2rem;
+    width: 2px;
+    background-color: #E0E0E0;
+}
+
+/* Horizontal connecting lines */
+.outcomes-container::before,
+.outputs-container::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -1rem;
+    width: 80%;
+    height: 2px;
+    background-color: #E0E0E0;
+}
+
+.tree-level {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.level-icon {
+    flex-shrink: 0;
+    margin-top: 0.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.level-label {
+    min-width: 140px;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.level-content {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: relative;
+}
+
+/* Connection lines */
+.connection-line {
+    position: relative;
+    height: 2rem;
+    margin-left: 6.5rem;
+}
+
+.connection-line::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #E0E0E0;
+}
+
+/* Horizontal and vertical connection lines */
+.outcomes-container, .outputs-container {
+    position: relative;
+}
+
+.outcomes-container::before,
+.outputs-container::before {
+    content: '';
+    position: absolute;
+    left: calc(50% - 1px);
+    top: -2rem;
+    width: 2px;
+    height: 2rem;
+    background-color: #E0E0E0;
+    z-index: 1;
+}
+
+.outcomes-container > *,
+.outputs-container > * {
+    position: relative;
+}
+
+.outcomes-container > *::before,
+.outputs-container > *::before {
+    content: '';
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    width: 2px;
+    height: 1rem;
+    background-color: #E0E0E0;
+    z-index: 1;
+}
+
+/* Horizontal connecting lines */
+.outcomes-container::after,
+.outputs-container::after {
+    content: '';
+    position: absolute;
+    top: -1rem;
+    left: 25%;
+    width: 50%;
+    height: 2px;
+    background-color: #E0E0E0;
+    z-index: 1;
+}
+
+/* Containers for different levels */
+.outcomes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.outputs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.outcome-item,
+.output-item {
+    position: relative;
+    padding-top: 1rem;
+}
+
+.tree-container {
+    padding: 2rem;
+}
+
+/* Tag component overrides */
+:global(.tag-container) {
+    margin-bottom: 0 !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+}
+
+:global(.tag-info) {
+    font-size: 0.875rem !important;
+    padding: 8px 12px !important;
+    font-weight: 500 !important;
+}
+
+:global(.tag-content) {
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    color: #333 !important;
+    padding: 12px !important;
+}
+
+/* Color overrides for tag-info based on level */
+.overall-objective :global(.tag-info) {
+    background-color: var(--level-color) !important;
+    color: white !important;
+}
+
+.outcomes :global(.tag-info) {
+    background-color: var(--level-color) !important;
+    color: #333 !important;
+}
+
+.outputs :global(.tag-info) {
+    background-color: var(--level-color) !important;
+    color: white !important;
+}
+
+/* Custom colors for each level */
+.overall-objective {
+    --level-color: #158B7F;
+    --level-color-light: rgba(21, 139, 127, 0.1);
+}
+
+.outcomes {
+    --level-color: #FFC800;
+    --level-color-light: rgba(255, 200, 0, 0.1);
+}
+
+.outputs {
+    --level-color: #AF52DE;
+    --level-color-light: rgba(175, 82, 222, 0.1);
+}
+
+/* Apply colors to elements */
+.overall-objective .tag-container {
+    background-color: var(--level-color-light);
+    border: 1px solid var(--level-color);
+}
+
+.outcomes .tag-container {
+    background-color: var(--level-color-light);
+    border: 1px solid var(--level-color);
+}
+
+.outputs .tag-container {
+    background-color: var(--level-color-light);
+    border: 1px solid var(--level-color);
+}
+
+.overall-objective .level-label {
+    color: var(--level-color);
+}
+
+.outcomes .level-label {
+    color: var(--level-color);
+}
+
+.outputs .level-label {
+    color: var(--level-color);
+}
+
+/* Connection lines colors */
+.overall-objective + .connection-line::before {
+    background-color: var(--level-color);
+}
+
+.outcomes .outcomes-container::before,
+.outcomes .outcome-item::before,
+.outcomes + .connection-line::before {
+    background-color: var(--level-color);
+}
+
+.outputs .outputs-container::before,
+.outputs .output-item::before {
+    background-color: var(--level-color);
+}
+
+/* Horizontal lines */
+.outcomes-container::after {
+    background-color: #FFC800;
+}
+
+.outputs-container::after {
+    background-color: #AF52DE;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .outcomes-container {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .outputs-container {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .tree-level {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+
+    .level-label {
+        min-width: auto;
+    }
+
+    .connection-line {
+        margin-left: 1rem;
+    }
+}

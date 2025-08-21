@@ -1,0 +1,327 @@
+.activity-table-container {
+  width: 100%;
+  border-radius: 0.25rem;
+  background: var(--White, #fff);
+  /* Vertical scroll for the container */
+  /* shaddow */
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+}
+
+.scrolled-table {
+  width: 100%;
+  overflow: auto;
+  padding: 0.2rem;
+}
+
+.activity-table {
+  width: 100%;
+  white-space: 2 !important;
+  border-collapse: collapse;
+}
+
+.row-sub-activity th {
+  border: 1px #adadad solid;
+  background: var(--White, #fff);
+  /* 20/reg Eng */
+  font-family: AG Book Pro;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.activity-table-header th:not(:last-child)::after {
+  content: url("../../../images/sort-icon.svg");
+  position: relative;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  /* Add this line */
+}
+
+.activity-table-header th:not(:last-child) {
+  white-space: nowrap;
+}
+
+.activity-table-header TH IMG {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.activity-table th:first-child,
+.activity-table td:first-child,
+.row-sub-activity th:first-child {
+  max-width: 20% !important;
+  white-space: 2 !important;
+}
+
+.description-cell {
+  min-width: 550px;
+  /* Adjust as needed */
+  width: auto;
+}
+
+.header-activity-table {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 1rem 0;
+  flex-direction: row;
+}
+
+.arrow-name-table {
+  display: inline-block;
+}
+
+.arrow-name-table img {
+  display: inline-block;
+}
+
+.arrow-name-table.down {
+  transform: rotate(90deg);
+}
+
+.btn-add-table {
+  border-radius: 0.25rem;
+  background: var(--Blue, #007aff);
+  color: var(--White, #fff);
+
+  /* 20/reg Eng */
+  font-family: AG Book Pro;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.activity-table-container h1 {
+  color: var(--Dark-80, #5a5a5a);
+
+  /* 32/reg Eng */
+  font-family: AG Book Pro;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.activity-table th,
+.activity-table td {
+  padding: 8px;
+  text-align: center;
+}
+
+.activity-table-parent-row-expanded td {
+  background: var(--Primary-20, #d0e8e5) !important;
+}
+
+.activity-table-header {
+  border-radius: 0.0625rem;
+  border: 1px #adadad solid;
+  background: var(--White-bg, #f5f5f5);
+  color: var(--Dark-80, #5a5a5a);
+  user-select: none;
+  /* 20/reg Eng */
+  font-family: AG Book Pro;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.activity-table-header th {
+  cursor: pointer;
+  border: 1px #adadad solid;
+  background: var(--White-bg, #f5f5f5);
+  color: var(--Dark-80, #5a5a5a);
+  user-select: none;
+  font-family: AG Book Pro !important;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.activity-table-row {
+  border: 1px solid var(--Dark-40, #adadad);
+  background: var(--White, #fff);
+  color: var(--Dark-80, #5a5a5a);
+  font-family: AG Book Pro;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: 3;
+}
+
+.activity-table-row td {
+  border: 1px solid var(--Dark-40, #adadad);
+  background: var(--White, #fff);
+}
+
+.activity-table-child-row {
+  background-color: #f9f9f9;
+
+  border: 1px solid var(--Dark-40, #adadad);
+  color: var(--Dark-100, #313131);
+
+  /* 20/reg Eng */
+  font-family: AG Book Pro;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.activity-table-child-row td {
+  border-bottom: 1px solid var(--Dark-40, #adadad);
+  background: var(--White, #fff);
+  color: var(--Dark-100, #313131);
+
+  /* 20/reg Eng */
+  color: var(--Dark-80, #5a5a5a);
+
+  /* 18/reg Eng */
+  font-family: AG Book Pro;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.name-activity-table {
+  text-decoration: underline;
+  text-align: left !important;
+  cursor: pointer;
+  white-space: nowrap;
+  min-width: 300px;
+}
+
+.activity-table th {
+  cursor: pointer;
+  /* width: 0px; */
+}
+
+.action-table {
+  margin: 0;
+  padding: 0;
+}
+
+.activity-status {
+  white-space: nowrap;
+  min-width: 200px;
+}
+
+.activity-status img {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.actions-table button {
+  display: inline-block;
+}
+
+.status-dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.activity-table-row:hover {
+  background-color: #f5f5f5;
+}
+
+.activity-table-details {
+  background-color: #e9e9e9;
+  margin: 0 3rem;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin-top: 1rem;
+  width: 40%;
+}
+
+.search-container label {
+  color: var(--Dark-80, #5a5a5a);
+
+  /* 24/reg Eng */
+  font-family: AG Book Pro;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-right: 8px;
+}
+
+.opration-buttons-activity-table {
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#search-input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+/* ,,, */
+.activity-table-container tbody tr {
+  transition: transform 0.3s ease-in-out;
+}
+
+.name-activity-table {
+  cursor: pointer;
+}
+
+.activity-table-row,
+.activity-table-child-row {
+  background-color: transparent !important;
+}
+
+@media screen and (max-width: 768px) {
+  .edit-project-form {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+
+  .activity-table {
+    overflow-y: scroll;
+    white-space: 2;
+  }
+  .activity-table-container h1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-activity-table {
+    flex-direction: column;
+    margin: 0;
+    align-items: flex-start;
+  }
+
+  .opration-buttons-activity-table {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .opration-buttons-activity-table button {
+    width: 100% !important;
+  }
+
+  .search-container {
+    width: 100% !important;
+  }
+}

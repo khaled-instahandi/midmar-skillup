@@ -1,0 +1,73 @@
+.exam-container {
+    border-radius: 0.25rem;
+    background: var(--White, #FFF);
+    padding: 2rem;
+    /* shaddow */
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.header-exam-title {
+    border-radius: 0.5rem;
+    background: var(--white-bg2, #FDFDFD);
+    border-top: 13px #158B7F solid;
+    margin: 1rem 0rem;
+    height: 14.5rem;
+
+    display: flex;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: 1.5rem;
+
+}
+
+.title-exam {
+    border: none !important;
+    border-bottom: 1px #838383 solid !important;
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 28/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: .5rem 0.5rem 0.5rem 0rem;
+
+}
+
+.description-exam {
+    border: none !important;
+    border-bottom: 1px #838383 solid !important;
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 20/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: .5rem 0.5rem 0.5rem 0rem;
+}
+
+.title-exam:focus,
+.description-exam:focus {
+    outline: none;
+}
+
+.btn-coby-exam {
+    border-radius: 0.25rem;
+    background: var(--Primary-100, #158B7F);
+
+    /* shaddow */
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    color: var(--White, #FFF);
+
+    /* 20/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

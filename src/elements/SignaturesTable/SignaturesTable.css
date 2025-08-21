@@ -1,0 +1,68 @@
+.btn-signatures {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sign-button {
+    color: var(--White, #FFF);
+
+    /* 18/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 0.25rem;
+    background: var(--Primary-100, #158B7F);
+    padding: 0rem 1rem;
+
+}
+
+.reject-button {
+    color: var(--Red, #EA5148);
+    padding: 0rem 1rem;
+    /* 18/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 0.25rem;
+    border: 1.5px solid var(--Red, #EA5148);
+}
+
+.not-appropriate,
+.rejected {
+    color: var(--Red, #EA5148);
+
+    /* 18/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* .not-appropriate::after{
+    content: url('../../../images/close-circle-red.svg');
+    fill: rgba(234, 81, 72, 1);
+} */
+.not-appropriate img,
+.complite-p img,
+.rejected img {
+    display: inline-block;
+    margin-left: .5rem;
+    vertical-align: baseline;
+}
+
+.complite-p {
+    color: var(--Primary-100, #158B7F) !important;
+
+    /* 18/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

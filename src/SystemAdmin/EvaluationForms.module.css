@@ -1,0 +1,123 @@
+.container {
+  padding: 32px;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.sectionTitle {
+  color: var(--Dark-100, #313131);
+
+  /* 32/reg Eng */
+  font-family: "AG Book Pro";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 2rem;
+}
+
+.greenDot {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  background: #158b7f;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.yellowDot {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  background: #ffc800;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.blueDot {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  background: #007aff;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.cardsRow {
+  display: grid;
+  gap: 20px;
+
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.card {
+  border-radius: 8px;
+  border: 1px solid var(--Dark-20, #d6d6d6);
+  background: var(--White, #fff);
+
+  padding: 32px 24px;
+  /* min-width: 160px; */
+  flex: 1;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.cardTitle {
+  color: var(--Dark-80, #5a5a5a);
+  text-align: center;
+
+  /* 28/reg Eng */
+  font-family: "AG Book Pro";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.cardIcon {
+  font-size: 1.5rem;
+  color: #888;
+  transition: color 0.2s;
+}
+
+.card:hover .cardIcon {
+  color: #555;
+}
+
+.greenCard {
+  border-top: 4px solid #1abc9c;
+}
+
+.yellowCard {
+  border-top: 4px solid #f7c948;
+}
+
+.blueCard {
+  border-top: 4px solid #3498db;
+}
+
+.arrowIcon {
+  font-size: 1.3rem;
+  transition: transform 0.2s;
+}
+
+.card:hover .arrowIcon {
+  transform: translate(2px, -2px);
+}

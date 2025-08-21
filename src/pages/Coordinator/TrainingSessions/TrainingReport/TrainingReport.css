@@ -1,0 +1,51 @@
+.objectives-outcomes h2,
+.test-result h2 {
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 32/bold Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.test-result h2 {
+    margin: 1rem 0;
+}
+
+.objectives-outcomes,
+.test-result {
+    margin: 1rem 0;
+}
+
+.objectives-outcomes ul {
+    list-style: decimal;
+    margin-left: 2rem;
+    color: var(--Dark-80, #5A5A5A);
+    font-family: "AG Book Pro";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5rem;
+    /* 166.667% */
+}
+
+.category-cources {
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    background: rgba(21, 139, 127, 0.15);
+
+}
+
+.category-cources h6 {
+    color: var(--Primary-100, #158B7F);
+
+    /* 24/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

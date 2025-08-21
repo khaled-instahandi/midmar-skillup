@@ -1,0 +1,343 @@
+.question-label {
+    border-radius: 0.25rem;
+    border: 1px solid var(--Dark-40, #ADADAD);
+    background: var(--White, #FFF);
+    display: block;
+    margin-bottom: 15px;
+    padding: 0.8rem;
+    color: var(--Dark-100, #313131);
+    /* 20/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.options {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+.option input[type="radio"] {
+    content: "";
+    margin-right: 10px;
+}
+
+.add-option input {
+    margin-right: 10px;
+}
+
+.btn-opreation-answer {
+    display: flex;
+
+}
+
+.question {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    cursor: move;
+    border-radius: 0.5rem;
+    background: var(--white-bg2, #FDFDFD);
+    border-left: 13px #158B7F solid;
+    padding: 1.5rem;
+
+    /* shaddow */
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.option-label {
+    width: 100%;
+    border-radius: 0.25rem;
+    border: 1px solid var(--Dark-40, #ADADAD);
+    background: var(--White, #FFF);
+    color: var(--Dark-80, #5A5A5A);
+    padding: 0.5rem;
+    text-decoration: none;
+    /* 20/reg Eng */
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "AG Book Pro";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.add-option-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+
+}
+
+.add-option-container-text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.add-option-container-text input {
+    border: 1px solid var(--Dark-40, #ADADAD);
+    padding: 1rem;
+    color: var(--Dark-100, #313131);
+
+    /* 20/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 50%;
+}
+
+.add-option-container input {
+    border-radius: 0.25rem;
+    border: 1px solid var(--Dark-40, #ADADAD);
+    background: var(--White, #FFF);
+    padding: 1rem;
+    color: var(--Dark-100, #313131);
+
+    /* 20/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 50%;
+}
+
+.add-option-container input:focus {
+    outline: none;
+}
+
+.add-option-container-text input:focus {
+    outline: none;
+}
+
+.add-option-btn {
+    color: var(--Blue, #007AFF);
+    text-align: end;
+    /* 20/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.drag-up {
+    display: flex;
+    margin-bottom: 1rem;
+
+    justify-content: center;
+}
+
+.prefix-lable-option {
+    display: flex;
+    width: 4rem;
+    color: var(--Dark-60, #838383);
+
+    /* 24/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.prefix-lable-option svg {
+    display: inline !important
+}
+
+.btn-opreation-answer input[type="checkbox"] {
+    appearance: none;
+    border-radius: 0.125rem;
+    background: rgba(123, 188, 103, 0.4);
+
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 2.8em;
+    height: 2.8rem;
+    border-radius: 0.15em;
+
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+
+.btn-opreation-answer svg {
+    margin: 0 0.5rem;
+}
+
+.btn-opreation-answer input[type="checkbox"]::before {
+    content: "";
+    width: 1.2rem;
+    /* تقليل حجم السهم */
+    height: 1.2rem;
+    /* تقليل حجم السهم */
+    transform: scale(0.8);
+    /* تقليل حجم السهم */
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 0.8em 0.8em #FFF;
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+
+.btn-opreation-answer input[type="checkbox"]:checked {
+    background: var(--Green, #7BBC67);
+
+}
+
+.btn-opreation-answer input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 34px;
+    color: var(--Dark-80, #5A5A5A);
+    align-items: center;
+    /* 20/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #158B7F;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #158B7F;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.opration-option-select {
+    padding: 1rem;
+    display: flex;
+    border-top: 1px solid var(--Dark-40, #ADADAD);
+
+    align-items: center;
+}
+
+.line-optation {
+    width: 0.0625rem;
+    height: 1.9375rem;
+    margin-right: 1rem;
+    background: var(--Dark-40, #ADADAD);
+}
+
+.required-checkobk-label {
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 20/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0 1rem;
+    line-height: normal;
+}
+
+.add-question-conatiner {
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    background: var(--white-bg2, #FDFDFD);
+
+    /* shaddow */
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.select-dropdown-question {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.type-question-dropdown {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.buttom-exam-content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0rem;
+    align-items: flex-start;
+
+}

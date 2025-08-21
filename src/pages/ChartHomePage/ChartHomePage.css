@@ -1,0 +1,61 @@
+.homepage {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.k-home {
+  display: flex;
+  /* flex-basis: 50%; */
+  flex: 1;
+  gap: 1.5rem;
+
+  /* min-width: 50%; */
+}
+
+.f-home,
+.b-home {
+  display: flex;
+  gap: 1.5rem;
+
+  /* padding: 0.5rem; */
+}
+
+/* Add more specific styles for each container if necessary */
+
+.card {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: var(--White, #fff);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 10px; */
+}
+
+@media (max-width: 1024px) {
+  .card {
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .f-home,
+  .b-home,
+  .p-home {
+    flex-direction: column;
+  }
+
+  .k-home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    max-width: 100%;
+    width: 100%;
+  }
+}

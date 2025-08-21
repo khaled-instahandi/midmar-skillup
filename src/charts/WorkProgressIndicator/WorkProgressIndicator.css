@@ -1,0 +1,191 @@
+.timeline-header {
+
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.timeline-header h2 {
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 24/bold Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 2rem;
+
+}
+
+.timeline-container-c {
+    border-radius: 0.75rem;
+    background: var(--White, #FFF);
+    width: 98%;
+    /* shaddow */
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 3rem;
+    margin: 1rem;
+}
+
+.months-indicator {
+    align-items: center;
+    position: absolute;
+    top: -45px;
+    color: var(--lndigo, #5856D6);
+
+    /* 24/bold Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+}
+
+.progress-bar-v {
+    position: relative;
+    height: 10px;
+    background-color: #ADADAD;
+    border-radius: 10px;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: #5856D6;
+    /* Use your primary color here */
+    border-radius: 10px 0 0 10px;
+}
+
+.progress-bar-thumb {
+    position: absolute;
+    top: -8px;
+    width: 25px;
+    height: 25px;
+    border: 3px #fff solid;
+    border-radius: 50%;
+    background-color: var(--Yellow, #FFC800);
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+    text-align: center;
+    line-height: 20px;
+    font-size: 0.9rem;
+    font-size: 0.9rem;
+}
+
+.progress-bar-thumb.start {
+    background-color: #FFC800;
+    /* Color for the beginning of work */
+}
+
+.progress-bar-thumb.current {
+    color: var(--Yellow, #FFC800);
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+}
+
+.progress-bar-thumb.end {
+    background-color: #ADADAD;
+    /* Color for the end of the project */
+}
+
+.month-indicator {
+    position: absolute;
+    top: 30px;
+    /* Adjust this value as needed */
+    color: #333;
+    font-size: 0.8rem;
+}
+
+.month-indicator.active {
+    color: #6200ea;
+    /* Active month color */
+}
+
+.timeline-footer {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 20px;
+}
+
+.current-date-label {
+    position: absolute;
+    top: 50px;
+    /* Adjust this value as needed */
+    transform: translateX(-50%);
+    background-color: #6200ea;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+.text-thumb-start {
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 12/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.text-thumb {
+    margin-top: 10px;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    /* justify-content: space-between; */
+}
+
+.text-thumb-start,
+.text-thumb-current,
+.text-thumb-end {
+    color: var(--Dark-80, #5A5A5A);
+    font-family: "AG Book Pro";
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: flex-end;
+    white-space: nowrap;
+
+}
+
+.text-thumb-current {
+    position: absolute;
+    top: 0px;
+    left: 45px;
+}
+
+.text-thumb-start {
+    position: absolute;
+    left: -29px;
+    top: 0;
+}
+
+.text-thumb-end {
+    left: 30px;
+    position: absolute;
+    top: 0;
+}
+
+@media (max-width: 768px) {
+    .hidden-footer-work {
+        display: none;
+
+    }
+
+    .timeline-container-c {
+        margin: 0 0 1rem 0;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .progress-bar-v {
+        margin: 2rem 1rem;
+    }
+}

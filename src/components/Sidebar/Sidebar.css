@@ -1,0 +1,126 @@
+.sidebar {
+  width: 393px;
+  height: auto;
+  background-color: #f8f9fa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* padding: 1rem; */
+  position: absolute;
+  margin-top: 2px;
+  z-index: 2;
+}
+
+.main-content {
+  transition: margin 0.3s ease;
+
+  padding: 1rem;
+}
+
+/* When the text direction is right-to-left */
+/* :dir(rtl) .main-content {
+  transition: margin-right 0.3s ease;
+  transition: margin-left 0s ease;
+
+} */
+
+/* When the sidebar is open */
+.sidebar-open {
+  margin-left: 393px;
+  margin-right: unset;
+}
+
+/* When the text direction is right-to-left and the sidebar is open */
+:dir(rtl) .sidebar-open {
+  margin-right: 393px;
+  margin-left: unset;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.menu-items {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--Dark-100, #313131);
+
+  /* 20/reg Eng */
+  font-family: "AG Book Pro";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.menu-item-top {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--Dark-80, #5a5a5a);
+
+  /* 18/reg Eng */
+  font-family: "AG Book Pro";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5rem 1rem;
+}
+
+
+
+
+.menu-item.selected,
+.menu-item:hover {
+  color: var(--Primary-100, #158b7f);
+  stroke: #158b7f;
+  /* 20/reg Eng */
+  font-family: "AG Book Pro";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: rgba(208, 232, 229, 0.4);
+}
+
+.icon {
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 80%;
+    height: auto;
+  }
+
+  .sidebar-open {
+    margin-left: 0;
+  }
+  :dir(rtl) .sidebar-open {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .sidebar-open {
+    margin-left: 0px;
+  }
+}

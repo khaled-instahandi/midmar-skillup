@@ -1,0 +1,222 @@
+.activity-details-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.data-activity-details {
+    width: 100%;
+    padding: 0rem 1rem;
+}
+
+.header-text-activity-details {
+    color: var(--Dark-100, #313131);
+    text-align: right;
+    margin-top: 1rem;
+    /* 24/bold */
+    font-family: SwissraCondensed-Medium;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+:dir(rtl) .timeline-header h2,
+:dir(rtl) .months-indicator,
+:dir(rtl) .text-thumb-start,
+:dir(rtl) .text-thumb-current,
+:dir(rtl) .text-thumb-end {
+    font-family: unset;
+}
+
+.activity-details-objectives>ul,
+.activity-details-outputs>ul,
+.activity-details-session-times>ul,
+.activity-details-training-methodology>ul {
+    list-style: decimal;
+    color: var(--Dark-80, #5A5A5A);
+    text-align: right;
+    font-family: SwissraCondensed-Normal;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 2rem;
+    line-height: 2.5rem;
+    /* 222.222% */
+}
+
+.section-scroll {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-title-coach {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.card-title-coach svg {
+    width: 44px;
+    height: 44px;
+}
+
+.card-title-coach h5 {
+    color: var(--Dark-60, #838383);
+
+    /* 16/reg */
+    font-family: SwissraCondensed-Normal;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-title-coach h6 {
+    color: var(--Dark-100, #313131);
+
+    /* 20/reg */
+    font-family: SwissraCondensed-Normal;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.activity-details-coach p {
+    color: var(--Dark-80, #5A5A5A);
+    text-align: right;
+    font-family: SwissraCondensed-Normal;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.1875rem;
+    margin: 1rem 0rem;
+    /* 194.444% */
+}
+
+
+/* details summary */
+.activity-details-agenda {
+    width: 100%;
+    position: relative;
+    /* Ensure relative positioning for absolute positioning of arrow */
+}
+
+summary {
+    width: calc(100% - 18px);
+    /* Adjust width to account for arrow width */
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: var(--Dark-100, #313131);
+    text-align: right;
+    font-family: SwissraCondensed-Normal;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    /* Ensure relative positioning for absolute positioning of arrow */
+}
+
+summary>svg {
+    margin-left: 5px;
+    display: inline;
+}
+
+summary::after {
+    content: '';
+    width: 18px;
+    height: 10px;
+    background: url(https://uploads.sitepoint.com/wp-content/uploads/2023/10/1697699669arrow.svg) no-repeat;
+    background-size: cover;
+    transition: 0.2s;
+    position: absolute;
+    left: 10px;
+    top: 30%;
+}
+
+details[open]>summary::after {
+    transform: rotate(180deg);
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+details[open] summary {
+    border-radius: 5px 5px 0 0;
+}
+
+details {
+    margin-top: 1rem;
+    border-radius: 0.25rem;
+    background: var(--White, #FFF);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+}
+
+/* extra styles */
+article>*:first-child {
+    margin: 0;
+}
+
+article>*+* {
+    margin: 0.75em 0 0 0;
+}
+
+article {
+    padding: 0px 10px 10px 10px;
+    margin: 0;
+}
+
+.decimal-list {
+    list-style-type: decimal;
+    padding-inline-start: 20px;
+}
+
+article>ul>li {
+    color: var(--Dark-80, #5A5A5A);
+    text-align: right;
+    font-family: SwissraCondensed-Normal;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem;
+    /* 187.5% */
+}
+
+.header-text-pretest-instructions {
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 56/bold */
+    font-family: SwissraCondensed-Medium;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.activity-details-pretest-instructions>ul {
+    margin: 2rem 0rem;
+    margin-right: 2rem;
+
+    list-style: decimal;
+    color: var(--Dark-80, #5A5A5A);
+    text-align: right;
+    font-family: SwissraCondensed-Normal;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.125rem;
+    /* 178.571% */
+}
+
+.activity-details-pretest-instructions {
+    padding: 0rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

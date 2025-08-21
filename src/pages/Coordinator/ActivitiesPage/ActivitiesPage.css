@@ -1,0 +1,11 @@
+.vertical-line {
+    width: 1.4375rem;
+    height: 0rem;
+    transform: rotate(90deg);
+    flex-shrink: 0;
+    background-color: var(--Dark-60, #838383);
+}
+
+.activity-status svg {
+    display: inline;
+}

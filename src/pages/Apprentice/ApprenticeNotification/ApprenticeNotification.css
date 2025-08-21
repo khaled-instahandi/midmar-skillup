@@ -1,0 +1,17 @@
+:dir(rtl) .notification-category {
+    margin-right: 0.5rem;
+    padding: 0.3rem;
+    border-radius: 0.125rem;
+
+}
+
+:dir(rtl) .notification-count {
+    right: unset !important;
+    left: -11px;
+    top: 4px;
+
+}
+
+:dir(rtl) .notification-content-z {
+    margin-right: 0.5rem;
+}

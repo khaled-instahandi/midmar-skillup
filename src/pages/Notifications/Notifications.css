@@ -1,0 +1,261 @@
+.notification-container {
+    width: 100%;
+    border-radius: 0.25rem;
+    background: var(--White, #FFF);
+
+    /* shaddow */
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 2rem 2rem;
+
+}
+
+.no-notification-message {
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 16/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.notification-tabs {
+    display: flex;
+    justify-content: flex-start;
+    /* background-color: #f1f1f1; */
+    border-bottom: 1px solid #838383;
+
+}
+
+.notification-count {
+    color: var(--White, #FFF);
+    font-family: "AG Book Pro" !important;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: absolute;
+    top: -11px;
+    right: -11px;
+    background-color: #EA5148;
+    border-radius: 71%;
+    padding: 1px;
+    font-size: 0.8em;
+    min-width: 20px;
+    text-align: center;
+}
+
+.tab {
+    position: relative;
+
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-right: 3rem;
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 20/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.tab.active {
+    color: var(--Dark-100, #313131);
+
+    /* 20/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* Or any color that indicates an active state */
+    border-bottom: 4px solid #158B7F;
+    position: relative;
+    top: 2.5px;
+}
+
+
+.notification-list-z {
+    padding: 10px;
+}
+
+.notification-item-z {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.notification-item-z.last-item {
+    border-bottom: none !important;
+}
+
+.dot-befor {
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #007AFF;
+    border-radius: 50%;
+    margin-right: .5rem;
+    position: relative;
+    vertical-align: middle;
+}
+
+
+.avatar {
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.notification-date-title {
+    color: var(--Dark-100, #313131);
+
+    /* 20/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 1rem 1rem;
+}
+
+
+.notification-content-z {
+    flex-grow: 1;
+    margin-left: 10px;
+    display: flex;
+    /* height: 2.5rem; */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.notification-user {
+    color: var(--Dark-100, #313131);
+
+    /* 18/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.notification-message {
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 16/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.notification-meta {
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+    margin-top: 0.3rem;
+}
+
+.notification-category {
+    color: var(--White-bg, #F5F5F5) !important;
+
+    /* 12/reg Eng */
+    font-family: "AG Book Pro" !important;
+    font-size: 0.75rem !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !;
+    border-radius: 0.125rem;
+    padding: 2px 4px;
+    background: var(--Blue, #007AFF);
+}
+
+.notification-time {
+    white-space: nowrap;
+    color: var(--Dark-80, #5A5A5A);
+    margin-right: .5rem;
+    /* 14/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Customize further based on your icons and avatar images */
+.notification-container h2 {
+    color: var(--Dark-100, #313131);
+
+    /* 24/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 2rem;
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .notification-container {
+        padding: 0.5rem 0.5rem;
+    }
+
+    .notification-tabs {
+        flex-direction: column;
+
+    }
+
+    .tab {
+        margin-bottom: 1.5rem;
+        /* padding: 0; */
+        width: 10rem;
+    }
+
+    .notification-count {
+        top: -6px;
+        right: -6px;
+        font-size: 0.6rem;
+        padding: 0.3rem;
+    }
+
+    .notification-item-z {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .notification-meta {
+        margin-top: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .notification-item-z {
+        padding: .4rem;
+        /* padding-top: .4rem; */
+    }
+
+    .notification-category {
+        display: block;
+    }
+
+    .notification-time {
+        margin-top: 0.5rem;
+        display: none;
+    }
+
+    .avatar {
+        width: 3rem;
+        height: 3rem;
+    }
+}

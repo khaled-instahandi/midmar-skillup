@@ -1,0 +1,49 @@
+.edit-panel {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* Define 6 columns */
+    grid-gap: 1rem;
+    align-items: center;
+    justify-items: stretch;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 1rem;
+}
+
+.two-col-element {
+    grid-column: span 2;
+    /* Element spans two columns */
+}
+
+.three-col-element {
+    grid-column: span 3;
+    /* Element spans three columns */
+
+}
+
+
+
+
+.btn-one-row {
+    grid-column: 1/-1;
+
+}
+
+@media screen and (max-width: 768px) {
+    .edit-panel {
+        grid-template-columns: 1fr;
+        grid-gap: 0rem;
+
+
+    }
+
+    .two-col-element {
+        margin-bottom: .5rem;
+    }
+
+    .three-col-element {
+        margin-bottom: .5rem;
+
+    }
+
+}

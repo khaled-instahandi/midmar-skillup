@@ -1,0 +1,24 @@
+.truncate-text {
+    overflow: hidden !important;
+    color: var(--Dark-80, #5A5A5A) !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+
+    /* 18/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.closed-status {
+    color: var(--Yellow, #FFC800);
+
+    /* 18/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

@@ -1,0 +1,57 @@
+
+
+.header-text-add-logical-framework {
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 32/bold Eng */
+    font-family: AG Book Pro;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+
+.button-add-logical-framework {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: var(--White, #FFF);
+
+    /* 24/bold Eng */
+    font-family: AG Book Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    background: linear-gradient(179deg, #158B7F 1.05%, #00BAAE 303.16%);
+    line-height: normal;
+}
+
+.add-logical-framework-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: stretch;
+    justify-content: flex-start;
+    width: 100%;
+padding: 1rem;
+}
+
+.add-logical-framework-form button {
+
+margin: 1rem 0;    display: flex;
+    align-items: center;
+}
+
+.add-logical-framework-form .name-add-logical-framework {
+    grid-column: 1 / -1;
+    align-items: center;
+}
+
+.add-logical-framework-form .link-add-logical-framework {
+    grid-column: 1 / -1;
+    align-items: center;
+}

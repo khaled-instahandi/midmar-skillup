@@ -1,0 +1,11 @@
+
+@media (max-width: 768px) {
+    .objectives-input {
+        grid-column: 1/-1 !important;
+        /* width: 100%; */
+    }
+}
+
+.objectives-input-q {
+    grid-column: 1/-1;
+}

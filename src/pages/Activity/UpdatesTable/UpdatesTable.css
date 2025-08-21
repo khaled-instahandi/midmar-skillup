@@ -1,0 +1,12 @@
+.actions-table {
+
+    display: flex;
+    border: none !important;
+    justify-content: space-evenly;
+}
+
+
+.completion-icon-table {
+    display: inline-block;
+    margin-right: .5rem;
+}

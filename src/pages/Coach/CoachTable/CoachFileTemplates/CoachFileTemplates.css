@@ -1,0 +1,93 @@
+.powerpoint-header {
+  padding: 0.5rem;
+  width: fit-content;
+  border-radius: 0.25rem;
+  border: 1px solid var(--Dark-20, #d6d6d6);
+  background: var(--white-bg2, #fdfdfd);
+
+  color: var(--Dark-100, #313131);
+  /* text-align: right; */
+
+  /* 20/bold */
+  font-family: SwissraCondensed-Medium;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.powerpoint-header img {
+  display: inline;
+  margin-left: 0.5rem;
+}
+.card-template > img {
+  width: 100%;
+  height: 12.3125rem;
+}
+.header-text-template {
+  display: flex;
+  margin-bottom: 0.5rem;
+  color: var(--Dark-100, #313131);
+  /* text-align: right; */
+
+  /* 20/reg */
+  font-family: SwissraCondensed-Normal;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.header-text-template > img {
+  margin-left: 0.5rem;
+}
+.card-template {
+  /* width: 30%; */
+  border-radius: 0.25rem;
+  background: var(--White, #fff);
+
+  /* shaddow */
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  flex-basis: 30%;
+}
+.btn-download {
+  padding: 0rem 1rem;
+  color: var(--White, #fff);
+  text-align: center;
+
+  /* 18/reg */
+  font-family: SwissraCondensed-Normal;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 0.25rem;
+  background: var(--Primary-100, #158b7f);
+}
+
+.list-cards-template {
+  margin: 1rem 0rem;
+}
+.list-cards-template {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: 320px) {
+  .card-template {
+    flex-basis: 100%;
+  }
+}
+
+@media (min-width: 641px) {
+  .card-template {
+    flex-basis: 47%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .card-template {
+    flex-basis: 30%;
+  }
+}

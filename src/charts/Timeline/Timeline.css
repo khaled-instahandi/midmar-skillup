@@ -1,0 +1,177 @@
+.timeline-container {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: var(--White, #FFF);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 10px; */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.date-controls span {
+  margin-right: 20px;
+}
+
+.icons {
+  display: flex;
+}
+
+.icons img {
+  margin-right: 5px;
+}
+
+.milestone-box {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 200px;
+  background-color: hsl(210, 100%, 94%);
+}
+
+.milestone-title {
+  font-weight: bold;
+  color: #007aff;
+}
+
+.milestone-description {
+  color: #666;
+}
+
+.task {
+  position: absolute;
+  bottom: 0;
+
+}
+
+.timeline {
+  position: relative;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.milestone {
+  position: absolute;
+}
+
+.flag {}
+
+.date {
+  position: absolute;
+  top: 20px;
+  color: #333;
+}
+
+.status-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #158b7f;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+  color: #333;
+}
+
+.timeline {
+  position: relative;
+  height: 50px;
+  padding-top: 20px;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #d6d6d6;
+}
+
+.task {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-point {
+  position: absolute;
+  top: -33px;
+  left: 0px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #FFC800 !important;
+}
+
+.date {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.status {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+
+}
+
+.date-timeline {
+  background-color: #fff3c7;
+  border-radius: 2px;
+}
+
+.hr {
+  margin-top: 3rem;
+}
+
+.task-status.done {
+  background-color: #158b7f;
+}
+
+.task-status.incomplete {
+  background-color: #d6d6d6 !important;
+}
+
+.timeline-completed {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background-color: #158b7f;
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .date-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 90px;
+    width: 100%;
+    align-content: flex-start;
+    justify-content: space-around;
+  }
+}

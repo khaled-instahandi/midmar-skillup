@@ -1,0 +1,139 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--White-bg, #F5F5F5);
+    position: relative;
+    overflow: hidden;
+}
+
+.signup-card {
+    display: flex;
+    padding: 2rem;
+    z-index: 10;
+    width: 100%;
+    max-width: 60%;
+    margin: 2rem;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.5rem;
+    background: var(--White, #FFF);
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+}
+
+.signup-form button {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+}
+
+.terms-checkbox {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+}
+
+.signup-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-logo {
+    width: 8.875rem;
+    height: 5.1875rem;
+    flex-shrink: 0;
+    margin-bottom: 1rem;
+}
+
+.signup-title {
+    color: var(--Dark-100, #313131);
+
+    /* 56/bold Eng */
+    font-family: AG Book Pro;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 0.5rem;
+}
+
+.signup-description {
+    color: var(--Dark-60, #838383);
+
+    /* 20/reg Eng */
+    font-family: AG Book Pro;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 2rem;
+}
+
+
+
+
+.login-link {
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--Dark-100, #313131);
+
+    /* 16/reg Eng */
+    font-family: AG Book Pro;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.login-link a {
+    color: var(--Primary-100, #158B7F);
+
+    /* 16/reg Eng */
+    font-family: AG Book Pro;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.sharp-background-top {
+    border-radius: 62.5rem;
+    background: var(--Primary-60, #73B9B2);
+    width: 62.5rem;
+    height: 62.5rem;
+    flex-shrink: 0;
+    position: absolute;
+    top: -60%;
+    left: -40%;
+
+}
+
+@media (max-width: 768px) {
+    .signup-card {
+        max-width: 90%;
+    }
+
+    .signup-form {
+        grid-template-columns: 1fr;
+    }
+
+    .signup-logo {
+        width: 6.875rem;
+        height: 3.1875rem;
+        flex-shrink: 0;
+        margin-bottom: 1rem;
+    }
+
+    .signup-title {
+        font-size: 2rem;
+    }
+}
+

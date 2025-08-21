@@ -1,0 +1,44 @@
+.header-top-title {
+    height: 3.5rem;
+    width: 100%;
+    color: var(--Dark-100, #313131);
+    text-align: center;
+    padding: 1rem;
+    /* 24/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: var(--Primary-40, #A1D1CC);
+    /* border-radius: 0.25rem */
+}
+
+.approval-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem;
+    height: 10rem;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.width-important {
+    width: 100% !important;
+}
+
+.header-buttom-title {
+    background: var(--White-bg, #F5F5F5);
+    height: 3.5rem;
+    padding: 1rem;
+    text-align: center;
+    color: var(--Dark-100, #313131);
+
+    /* 24/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 2rem;
+}

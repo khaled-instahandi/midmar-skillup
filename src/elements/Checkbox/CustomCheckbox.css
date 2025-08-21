@@ -1,0 +1,49 @@
+.checkbox-container-c {
+    display: inline-block;
+    position: relative;
+    user-select: unset;
+
+}
+
+.checkbox-input-c {
+    display: none;
+    user-select: unset;
+
+}
+
+.checkbox-label-c {
+    user-select: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.outer-circle {
+    width: 30px;
+    user-select: unset;
+
+    height: 30px;
+    border: 2px solid #ADADAD;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-circle {
+    width: 20px;
+    user-select: unset;
+
+    height: 20px;
+    background-color: #ADADAD;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.checkbox-label-c.checked .outer-circle {
+    border-color: #158B7F;
+}
+
+.checkbox-label-c.checked .inner-circle {
+    background-color: #158B7F;
+}

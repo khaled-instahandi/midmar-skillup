@@ -1,0 +1,140 @@
+.trainees-container {
+    /* margin: 16px; */
+    overflow-x: auto;
+
+}
+
+.trainees-container label {
+    color: var(--Dark-100, #313131);
+
+    /* 20/reg Eng */
+    /* font-family: "AG Book Pro"; */
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.tag-input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    /* border-radius: 1.25rem; */
+    background: var(--White, #FFF);
+
+
+    height: 3rem;
+
+}
+
+.scroll-x-container {
+    overflow-x: scroll;
+    margin-bottom: 16px;
+    border-radius: 0.5rem;
+    border: 2px solid var(--Dark-60, #838383);
+}
+
+.tag {
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 8px;
+    background-color: #fff;
+    margin-left: 4px;
+    font-size: 0.875rem;
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 16/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    height: 80%;
+    line-height: normal;
+    background: rgba(208, 232, 229, 0.4);
+
+
+}
+
+.tag-input input {
+    border: none;
+    outline: none;
+    font-size: 0.875rem;
+    padding: 4px 8px;
+}
+
+.trainees-table {
+    padding: 0rem 1rem;
+    background: var(--White, #FFF);
+    border-radius: 0.5rem;
+    border: 2px solid var(--Dark-60, #838383) !important;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+
+.trainees-table table {
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.trainees-table thead tr {
+    border-bottom: 2px #313131 solid !important;
+    /* margin: 2px; */
+
+}
+
+.trainees-table thead tr th {
+    color: var(--Dark-100, #313131);
+
+    /* 18/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.trainees-table tbody tr:not(:last-child) {
+    border-bottom: 1px #ADADAD solid;
+
+}
+
+.trainees-table tbody tr td {
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 18/reg Eng */
+    /* font-family: "AG Book Pro"; */
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.trainees-table th,
+.trainees-table td {
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.tag button {
+
+    cursor: pointer;
+    margin-left: 8px;
+
+}
+
+.tag button:hover {
+    color: #158B7F;
+}
+
+.tag-input input {
+    flex-grow: 1;
+}
+
+@media (max-width: 768px) {}

@@ -1,0 +1,66 @@
+.notifaction-details {
+    display: flex;
+    border-radius: 0.25rem;
+    background: rgba(234, 81, 72, 0.1);
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.notifaction-details span {
+    color: var(--Red, #EA5148);
+
+    /* 20/reg Eng */
+    font-family: AG Book Pro;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header-details img {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.content-details h1 {
+    color: var(--Dark-100, #313131);
+
+    /* 24/reg Eng */
+    font-family: AG Book Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header-details p {
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 16/reg Eng */
+    font-family: AG Book Pro;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.content-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-details {
+    margin-top: 1rem;
+}
+
+.detail-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.detail-form button {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+}

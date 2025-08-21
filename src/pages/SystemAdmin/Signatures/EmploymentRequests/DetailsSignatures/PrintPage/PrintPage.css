@@ -1,0 +1,149 @@
+.print-page-container {
+    width: 100%;
+    border-radius: 1.25rem;
+    border-top: 22px #158B7F solid;
+    padding: 0.5rem 1rem 0rem 1rem;
+
+
+}
+
+.print-header,
+.print-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px; */
+    /* Add more styling */
+}
+.print-header{
+    margin-bottom: 2rem;
+}
+.request-details {
+    /* margin-top: 2rem; */
+}
+.items-table{
+    margin-top: 2rem;
+}
+.request-details .request-row {
+    /* display: flex;
+    justify-content: space-between; */
+    /* Add more styling */
+    /* display: grid; */
+    text-align: center;
+
+}
+
+.request-details .request-cell {
+    flex-basis: calc(50% - 20px);
+    /* Add more styling */
+    text-align: center;
+}
+
+.items-table table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.header-section {
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 28/bold Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.header-time {
+    display: flex;
+    flex-direction: column;
+}
+
+.time-heder-a {
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 20/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.buttom-time {
+    color: var(--Dark-100, #313131);
+
+    /* 28/bold Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.items-table th,
+.items-table td {
+    border: 1px solid #ddd;
+    padding: 6px;
+    text-align: left;
+}   
+.total-price-table{ 
+    width: 100%;
+    white-space: wrap;
+}
+.items-table h2,.total-price-table h2,.signatures-print h2 {
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 28/bold Eng */
+    font-family: "AG Book Pro";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    margin: 1rem 0 1rem 0;
+    line-height: normal;
+}
+
+.request-row th,
+.request-row td {
+    border: 1px #838383 solid;
+    /* flex-basis: calc(50% - 20px); */
+    padding: 1rem .2rem;
+    text-align: center;
+    vertical-align: middle;
+    width: auto;
+    align-items: center;
+
+}
+.total-price-description{
+    background: rgba(255, 200, 0, 0.35);
+
+}
+.header-logo img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.request-row th {
+    background: var(--White-bg, #F5F5F5);
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 24/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.request-row td {
+    color: var(--Dark-100, #313131);
+
+    /* 24/reg Eng */
+    font-family: "AG Book Pro";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

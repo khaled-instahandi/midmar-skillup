@@ -1,0 +1,128 @@
+.header-text-training-evaluation {
+    color: var(--Dark-100, #313131);
+    text-align: right;
+
+    /* 40/bold */
+    font-family: SwissraCondensed-Medium;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 1rem 0rem;
+    display: flex;
+}
+
+.cuche-box-header {
+    background-color: rgba(208, 232, 229, 0.4);
+    color: var(--Primary-100, #158B7F) !important;
+    text-align: right;
+
+    /* 24/bold */
+    font-family: SwissraCondensed-Medium;
+    font-size: 1.5rem !important;
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+
+    line-height: normal;
+}
+
+.min-height-100 {
+    min-height: 100px;
+}
+
+.question-training-evaluation-t {
+    color: var(--Dark-80, #5A5A5A);
+    text-align: right;
+
+    /* 24/bold */
+    font-family: SwissraCondensed-Medium;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.range-countainer-test-a {
+    display: block;
+    width: 100%;
+    padding-right: 3rem;
+}
+
+.range-countainer-test-a::after {
+    content: 'ممتاز';
+    position: absolute;
+    top: 60%;
+    right: 54%;
+    vertical-align: middle;
+    color: var(--Dark-80, #5A5A5A);
+    font-family: "AG Book Pro" !important;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.question-training-evaluation-t {
+    position: relative;
+    display: inline-block;
+    margin-right: 1rem;
+    padding-right: 0.6rem;
+}
+
+.circle-divider {
+    content: '';
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    /* Make it a circle */
+    background-color: var(--Dark-80, #5A5A5A);
+    /* Change color */
+    position: absolute;
+    top: 50%;
+    /* Position vertically in the middle */
+    left: 100%;
+    /* Position it after the text */
+    /* margin-left: 10px;
+    margin-right: 1rem; */
+    /* Add spacing between text and circle */
+    transform: translateY(-50%);
+    /* Adjust vertical position */
+}
+
+.d-flex {
+    display: flex !important;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.befor-yse::before {
+    content: 'نعم';
+    position: absolute;
+    top: -38px;
+    right: 1px;
+}
+
+.after-no::after {
+    content: 'لا';
+    position: absolute;
+    top: -38px;
+    left: 21px;
+}
+
+.range-countainer-test-a::before {
+    content: 'ضعيف';
+    position: absolute;
+    top: 60%;
+    right: -2rem;
+    vertical-align: middle;
+    color: var(--Dark-80, #5A5A5A);
+    font-family: "AG Book Pro" !important;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

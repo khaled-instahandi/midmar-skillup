@@ -1,0 +1,48 @@
+.financial-overview-card {
+    background: rgba(var(--Green-rgb, 123, 188, 103), 0.08);
+    border-radius: 0.75rem;
+    padding: 20px;
+    width: 20rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+}
+
+.financial-overview-card-icon {
+    background-color: #7BBC67;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.financial-overview-card-title {
+
+    margin: 10px 0 5px 0;
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 20/reg Eng */
+    font-family: AG Book Pro;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.financial-overview-card-value {
+    color: var(--Green, #7BBC67);
+
+    /* 32/bold Eng */
+    font-family: AG Book Pro;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+}

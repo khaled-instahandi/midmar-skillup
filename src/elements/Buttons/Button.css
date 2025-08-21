@@ -1,0 +1,103 @@
+.button-t {
+  padding: 0.5rem 0.4rem;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  outline: none;
+  border: 2px solid transparent;
+  cursor: pointer;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.icon-notfication {
+  background: url("../../images/red-circle.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  text-align: center;
+  /* border-radius: 50%; */
+  /* padding: .5rem; */
+}
+
+.button-filled {
+  background-color: #fff;
+  color: #231f20;
+  border-color: #000;
+  font-size: 18px;
+  font-weight: 500;
+}
+.invite-btn {
+  border-radius: 0.25rem;
+  border: 1px solid var(--Primary-100, #158b7f);
+  color: var(--Primary-100, #158b7f);
+
+  /* 16/bold */
+  font-family: SwissraCondensed-Medium;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.icon-left {
+  margin-right: auto;
+}
+
+.icon-right {
+  margin-right: auto;
+}
+
+.icon {
+  transition: filter 0.3s;
+}
+
+.button-filled:hover {
+  color: #fff;
+  background-color: #158b7f;
+  border-color: #158b7f;
+}
+
+.button-filled:hover .icon {
+  filter: brightness(0) invert(1);
+}
+
+.button-login {
+  border-radius: 0.5rem;
+  background: linear-gradient(
+    179deg,
+    #158b7f 1.05%,
+    #00baae 303.16%
+  ) !important;
+  color: var(--White, #fff);
+
+  /* 24/bold Eng */
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.button-login:hover {
+  border-radius: 0.5rem;
+  background: linear-gradient(
+    178deg,
+    #158b7f 2.05%,
+    #00baae 150.39%
+  ) !important;
+}
+
+.button-login-out {
+  border-radius: 0.5rem;
+  border: 2px solid var(--Primary-100, #158b7f);
+  color: var(--Primary-100, #158b7f);
+  width: 100%;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

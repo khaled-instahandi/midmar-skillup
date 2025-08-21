@@ -1,0 +1,80 @@
+.project-flow-chart {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0.75rem;
+    background: var(--White, #FFF);
+
+    /* shaddow */
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.project-flow-buttons {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-flow-tite {
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 24/reg Eng */
+    font-family: AG Book Pro;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.top-project-flow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 0.5rem;
+}
+
+.project-flow-container {
+    width: 50%;
+    margin: 1rem 1rem;
+}
+
+.project-milestone {
+    width: 50%;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+}
+
+.date-controls-flow {
+    color: var(--Dark-80, #5A5A5A);
+
+    /* 16/reg Eng */
+    font-family: AG Book Pro;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    /* align-content: center; */
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .project-flow-container {
+        width: 80%;
+    }
+
+    .project-milestone {
+        width: 80%;
+
+    }
+
+    .project-flow-chart {
+        flex-direction: column;
+    }
+}

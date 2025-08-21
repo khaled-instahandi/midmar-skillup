@@ -1,0 +1,8 @@
+.text-coach-table {
+  color: var(--Dark-100, #313131);
+  font-family: SwissraCondensed-Medium;
+  font-size: 1rem !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

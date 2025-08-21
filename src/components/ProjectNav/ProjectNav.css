@@ -1,0 +1,196 @@
+.project-nav {
+  background: #fcfcfc;
+
+  border-radius: 10px;
+  padding: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  flex-grow: 1;
+}
+:dir(rtl) .project-header h1 img {
+  margin-right: unset;
+  margin-left: 0.5rem;
+}
+.project-nav__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin-bottom: 1rem;
+  border-bottom: 0.0625rem #838383 solid;
+  position: relative;
+  gap: 20px;  
+  /* إضافة */
+}
+
+.project-nav__item {
+  margin-right: 2rem;
+}
+
+.project-nav__item.active {
+  stroke: var(--Primary-100, #158b7f);
+  border-bottom: 4px solid #158b7f;
+  position: relative;
+  /* إضافة */
+  bottom: -2px;
+  /* إضافة */
+  left: 0;
+  color: var(--Primary-100, #158b7f);
+
+  /* 20/reg Eng */
+  font-family: "AG Book Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* إضافة */
+}
+
+.project-nav__item.active a span {
+  color: #158b7f;
+}
+
+.project-nav__item a {
+  text-decoration: none;
+  color: var(--Dark-100, #313131);
+
+  /* 20/reg Eng */
+  font-family: "AG Book Pro";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  margin-bottom: 0.5rem;
+
+  align-items: center;
+}
+
+.project-nav__item a span {
+  margin-left: 0.5rem;
+  color: var(--Dark-100, #313131);
+  /* 20/reg Eng */
+  font-family: "AG Book Pro";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.project-header h1 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.project-details {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  background: rgba(245, 245, 245, 0.5);
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}
+
+.project-documentn {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+}
+
+.project-button span {
+  margin-left: 0.5rem;
+}
+
+.donors,
+.project-code,
+.project-document {
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--Dark-80, #5a5a5a);
+
+  /* 16/reg Eng */
+  font-family: "AG Book Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.text-coach-table {
+  color: var(--Dark-100, #313131);
+  font-family: SwissraCondensed-Medium;
+  font-size: 1.5rem !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.project-document span,
+.donors span,
+.project-code span {
+  background-color: #fff3c7;
+  padding: 0.2rem 0.5rem;
+  margin-left: 0.5rem;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--Dark-100, #313131);
+
+  /* 16/reg Eng */
+  font-family: "AG Book Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.project-name-title {
+  color: var(--Dark-80, #5a5a5a);
+
+  /* 16/reg Eng */
+  font-family: "AG Book Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.download-btn {
+  margin-right: 0.5rem;
+}
+
+.project-header h1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-header h1 img {
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .project-nav__item {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .project-nav__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-details {
+    height: 150px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .project-document,
+  .donors,
+  .project-code {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,140 @@
+.dropdown-container {
+  position: relative;
+  /* margin-bottom: 10px;
+    margin-top: 0.5rem; */
+}
+
+.dropdown-container label {
+  margin-bottom: 0.5rem;
+  color: var(--Dark-100, #313131);
+
+  /* 20/reg Eng */
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: block;
+}
+
+.dropdown {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--Dark-60, #838383);
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  line-height: normal;
+  outline: none;
+  transition: border-color 0.3s;
+  height: 3rem;
+  cursor: pointer;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+}
+
+.dropdown.active {
+  border-radius: 0.5rem;
+  border: 2px solid var(--Primary-100, #158b7f);
+  box-shadow: 0px 0px 4px 0px #158b7f;
+}
+
+.dropdown-arrow {
+  margin-top: 1rem;
+  position: relative;
+
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: var(--Dark-60, #838383);
+}
+
+.dropdown-arrow.up {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.dropdown-selected {
+  color: var(--Dark-60, #838383);
+  white-space: nowrap;
+  /* 18/reg Eng */
+  font-family: AG Book Pro;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.dropdown-option:not(:last-child):after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-options {
+  position: absolute;
+  width: 100%;
+  margin-top: 0.8rem;
+  z-index: 10;
+  background: var(--White, #fff);
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 1.125rem;
+  color: #000;
+}
+
+.dropdown-option {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: var(--White, #fff);
+  position: relative;
+  /* For the shadow effect */
+}
+
+.dropdown-options .dropdown-option:first-child {
+  border-radius: 0.5rem 0.5rem 0 0;
+
+  /* Top rounded corners for these first option */
+}
+
+.dropdown-option:not(:last-child) {
+  position: relative;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: var(--White, #fff);
+}
+
+.dropdown-option:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  /* Creates a shadow effect */
+}
+
+.dropdown-option {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: var(--White, #fff);
+  /* Ensure consistent background */
+}
+
+.dropdown-option:hover {
+  background-color: #f2f2f2;
+  /* Hover state background color */
+}
+
+.dropdown-option:not(:first-child):not(:last-child) {
+  border-radius: 0;
+  /* No rounded corners for middle options */
+}
+
+/* Add any additional styling as needed */

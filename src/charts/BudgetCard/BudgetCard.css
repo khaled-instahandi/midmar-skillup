@@ -1,0 +1,87 @@
+.budget-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    width: 25%;
+
+}
+
+.budget-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.budget-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+}
+
+.budget-amount {
+    font-size: 1.5rem;
+    color: #5856D6;
+    font-weight: bold;
+}
+
+.budget-description {
+    color: #5A5A5A;
+
+}
+
+.budget-percentage-home {
+    display: flex;
+}
+
+.budget-percentage {
+    color: #838383 !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal;
+}
+
+.budget-percentage-home span {
+    color: #5856D6;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    margin-right: 0.3rem;
+}
+
+.budget-chart {
+    position: relative;
+}
+
+.chart-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #5856D6;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.budget-chart canvas {
+    width: 100px !important;
+    height: 100px !important;
+}
+@media (max-width: 768px) {
+    .budget-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+    }
+  }
