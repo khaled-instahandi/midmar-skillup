@@ -13,26 +13,29 @@ const Login = () => {
 
   const handleLogin = (event) => {
     event.preventDefault();
-    // const role = "apprentice";
-    // const role = "coach";
-    //   const role = "admin";
-
-    // const role = "coordinator";
+    
+    // Set role in localStorage
     localStorage.setItem("role", email);
 
-    console.log(email, password, rememberMe);
-    if (email === "coach") {
-      navigate("/coach/interactive-panel");
-    } else if (email === "apprentice") {
-      navigate("/dashboard-apprentice");
-    } else if (email === "admin") {
-      navigate("/dashboard");
-    } else if (email === "coordinator") {
-      navigate("/dashboard-coordinator");
-    } else if (email === "system-admin") {
-      navigate("/dashboard-system-admin");
-    } else {
-      navigate("/");
+    // Role-based navigation
+    switch(email) {
+      case "coach":
+        navigate("/coach/interactive-panel");
+        break;
+      case "apprentice":
+        navigate("/dashboard-apprentice");
+        break;
+      case "admin":
+        navigate("/dashboard");
+        break;
+      case "coordinator":
+        navigate("/dashboard-coordinator");
+        break;
+      case "system-admin":
+        navigate("/dashboard-system-admin");
+        break;
+      default:
+        navigate("/login");
     }
   };
 
