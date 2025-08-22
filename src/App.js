@@ -85,33 +85,43 @@ import FilesCenter from "./pages/SystemAdmin/FilesCenter/FilesCenter";
 function RequireAuth({ children }) {
   const navigate = useNavigate();
   const role = localStorage.getItem("role");
+  const location = window.location.pathname;
 
   React.useEffect(() => {
-    if (!role) {
-      navigate("/login");
-      return;
-    }
-
-    switch (role) {
-      case "coach":
-        navigate("/coach/interactive-panel");
-        break;
-      case "apprentice":
-        navigate("/dashboard-apprentice");
-        break;
-      case "admin":
-        navigate("/dashboard");
-        break;
-      case "coordinator":
-        navigate("/dashboard-coordinator");
-        break;
-      case "system-admin":
-        navigate("/dashboard-system-admin");
-        break;
-      default:
+    // Only redirect if we're at the root path or login page
+    if (location === "/" || location === "/login") {
+      if (!role) {
         navigate("/login");
+        return;
+      }
+
+      switch (role) {
+        case "coach":
+          navigate("/coach/interactive-panel");
+          break;
+        case "apprentice":
+          navigate("/dashboard-apprentice");
+          break;
+        case "admin":
+          navigate("/dashboard");
+          break;
+        case "coordinator":
+          navigate("/dashboard-coordinator");
+          break;
+        case "system-admin":
+          navigate("/dashboard-system-admin");
+          break;
+        default:
+          navigate("/login");
+      }
     }
-  }, [role, navigate]);
+  }, [location, role, navigate]);
+
+  // If no role and not on a public route, redirect to login
+  if (!role && !location.includes("/login") && !location.includes("/sginup") &&
+    !location.includes("/email-verification") && !location.includes("/account-created")) {
+    return <Navigate to="/login" />;
+  }
 
   return children;
 }
@@ -129,22 +139,6 @@ function App() {
         <Route path="/ar/sginup" element={<SignUpAr />} />
         <Route path="/ar/email-verification" element={<EmailVerificationAr />} />
 
-        {/* Protected routes - require role */}
-        <Route path="/" element={
-          <RequireAuth>
-            <Dashboard />
-          </RequireAuth>
-        }>
-          <Route path="/dashboard-coordinator" element={<DashboardCoordinator />} />
-          <Route path="/activities-coordinator" element={<ActivitiesPage />} />
-          <Route path="/dashboard-coordinator/training-sessions" element={<TrainingSessions />} />
-          <Route path="/dashboard-coordinator/instructors" element={<Instructors />} />
-          <Route path="/dashboard-coordinator/trainees" element={<Trainees />} />
-          <Route path="/dashboard-coordinator/exams" element={<Exams />} />
-          <Route path="/dashboard-coordinator/objectives" element={<Objectives />} />
-          <Route path="/notification-coordinator" element={<NotificationCoordinator />} />
-          {/* Add all your other routes here */}
-        </Route>
 
 
         <Route path="/" element={
